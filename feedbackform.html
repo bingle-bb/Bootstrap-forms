@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f8f9fa;
+        font-family: "DM Sans", serif;
+      }
+
+      .form-container {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .input-group {
+        border: 1px solid #ddd;
+        border-radius: 30px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        background: white;
+      }
+
+      .input-group-text {
+        background: #8a0d9e;
+        color: white;
+        border: none;
+      }
+
+      .form-control {
+        border: none;
+        border-radius: 30px;
+        padding: 10px;
+      }
+
+      .btn-submit {
+        background: linear-gradient(to right, #8a0d9e, #d633ff);
+        color: white;
+        border: none;
+        border-radius: 30px;
+        padding: 10px;
+        font-size: 18px;
+        width: 100%;
+        transition: 0.3s;
+      }
+
+      .btn-submit:hover {
+        background: linear-gradient(to right, #6b087e, #c92df7);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form-container">
+      <h3 class="mb-3">FEEDBACK FORM</h3>
+      <p class="text-muted">
+        We appreciate your input. It helps us improve and serve you better. Let
+        us know what you liked or how we can do better!
+      </p>
+
+      <form>
+        <div class="input-group">
+          <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-text"
+            ><i class="fa-solid fa-envelope"></i
+          ></span>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Mail ID"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-text"
+            ><i class="fa-solid fa-mobile-screen"></i
+          ></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Mobile Number"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-text"
+            ><i class="fa-solid fa-comment"></i
+          ></span>
+          <textarea
+            class="form-control"
+            placeholder="Your Feedback"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">SUBMIT</button>
+      </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
